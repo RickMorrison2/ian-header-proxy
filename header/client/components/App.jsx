@@ -1,4 +1,4 @@
-import React, {PureComponent} from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import {BrowserRouter, Route, Link} from 'react-router-dom';
@@ -12,7 +12,7 @@ import RelatedArtists from './RelatedArtists.jsx';
 
 import '../styles.scss';
 
-class Header extends PureComponent {
+class Header extends Component {
   constructor(props) {
     super(props)
 
@@ -38,7 +38,7 @@ class Header extends PureComponent {
 
   componentDidMount() {
     this._isMounted = true;
-    this.getArtistState('5c9e8a06deeb8c28571e26a4')
+    this.getArtistState('5cafb139e9ff6e09624c07c2')
   }
 
   componentWillUnmount() {
